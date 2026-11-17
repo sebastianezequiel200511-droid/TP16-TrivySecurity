@@ -214,7 +214,8 @@ jobs:
           echo "### Auditoría Bloqueante de Seguridad (Andon Cord) :shield:" >> "$GITHUB_STEP_SUMMARY"
           echo "| Evaluación | Severidades | Política de control |" >> "$GITHUB_STEP_SUMMARY"
           echo "|------------|-------------|---------------------|" >> "$GITHUB_STEP_SUMMARY"
-          echo "| Contenedor, dependencias e IaC renderizado | HIGH, CRITICAL | Andon Cord activo |" >> "$GITHUB_STEP_SUMMARY"
+          echo "| Contenedor, dependencias e IaC renderizado | HIGH, CRITICAL | Andon Cord activo |" \ 
+          >> "$GITHUB_STEP_SUMMARY"
 
   # =========================================================================
   # FASE 2B: REPORTE INFORMATIVO (LOW/MEDIUM)
